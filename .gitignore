@@ -49,10 +49,6 @@
 modules.order
 Module.symvers
 Mkfile.old
-<<<<<<< HEAD
-dkms.conf
-=======
 dkms.conf
 
 .vscode/
->>>>>>> 0aa3fb0a71e3b24c81e0cba3065f97bbc676435e
