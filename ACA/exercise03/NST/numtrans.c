@@ -15,7 +15,7 @@ int ctoi (char c) {     // helper function
 //long : 4Byte
 long long atol_with_radix (char* s, int radix) {
    long long ans = 0;
-   int r = 1;
+   long long r = 1;
    int len = 0;
 
    while (s[len] != '\0') len++;
@@ -24,7 +24,7 @@ long long atol_with_radix (char* s, int radix) {
    while (len >= 0) {
       ans += ctoi(s[len]) * r;
       r = r * radix;
-     len--;
+      len--;
    }
 
    return ans;
@@ -35,8 +35,10 @@ void main (int argc, char** argv) {
    int k = atoi( argv[2] );
    long long n = atol_with_radix( argv[3], i );
 
-   char s[65];                 // long has 64 bits 
-   ltoa( n, s, k );            // call ltoa in stdlib
+   char s[65];                 // long long has 64 bits 
+
+   //ltoa( n, s, k );            // call ltoa in stdlib , convert long type number, most 32bits
+   lltoa( n, s, k );
    printf( "%s\n", s );
 }
 

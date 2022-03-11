@@ -59,7 +59,7 @@ char *toBits (Bits64 *bits) {
    return s;
 }   // "10101111001110001111........"
 
-char *littleEndianBit4 (Bits64 *bits) {;   
+char *littleEndianBit4 (Bits64 *bits) {  
    char *s = malloc(nBits + nBits/4);
    char *t = s;
    for (int i = 0; i < nBytes; i++) {
