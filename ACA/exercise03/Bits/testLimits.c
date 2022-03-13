@@ -24,8 +24,8 @@ void main (int argc, char** argv) {
    printf( "USHRT_MAX   :   %d\n", (unsigned short) USHRT_MAX );
 
    printf( "\nLimits on floating numbers:\n" );
-   printf( "Storage size for float : %d \n", sizeof(float) );
-   printf( "Storage size for double : %d \n", sizeof(double) );
+   printf( "Storage size for float : %d \n", sizeof(float) ); // 4Byte 32bits
+   printf( "Storage size for double : %d \n", sizeof(double) ); // 8Byte 64bits
    printf( "FLT_MAX     :   %g\n", (float) FLT_MAX );
    printf( "FLT_MIN     :   %g\n", (float) FLT_MIN );
    printf( "-FLT_MAX    :   %g\n", (float) -FLT_MAX );
@@ -33,5 +33,6 @@ void main (int argc, char** argv) {
    printf( "DBL_MAX     :   %g\n", (double) DBL_MAX );
    printf( "DBL_MIN     :   %g\n", (double) DBL_MIN );
    printf( "-DBL_MAX    :   %g\n", (double) -DBL_MAX );
-   printf( "Precision value: %d\n", FLT_DIG  );
+   printf( "Float precision value: %d\n", FLT_DIG  );
+   printf( "Double precision value: %d\n", DBL_DIG  );
 }
