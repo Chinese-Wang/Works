@@ -1,0 +1,10 @@
+minesweeper < ../TestCases4MineSweeper/1.in > test1.out
+minesweeper < ../TestCases4MineSweeper/2.in > test2.out
+minesweeper < ../TestCases4MineSweeper/3.in > test3.out
+minesweeper < ../TestCases4MineSweeper/4.in > test4.out
+minesweeper < ../TestCases4MineSweeper/5.in > test5.out
+minesweeper < ../TestCases4MineSweeper/6.in > test6.out
+minesweeper < ../TestCases4MineSweeper/7.in > test7.out
+minesweeper < ../TestCases4MineSweeper/8.in > test8.out
+minesweeper < ../TestCases4MineSweeper/9.in > test9.out
+minesweeper < ../TestCases4MineSweeper/10.in > test10.out
