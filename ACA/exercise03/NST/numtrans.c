@@ -15,6 +15,13 @@ int ctoi (char c) {     // helper function
 //long : 4Byte
 long long atol_with_radix (char* s, int radix) {
    long long ans = 0;
+
+   while (*s) {
+      ans = ans * radix + ctoi(*s);
+      s++;
+   }
+
+   /*long long ans = 0;
    long long r = 1;
    int len = 0;
 
@@ -25,7 +32,7 @@ long long atol_with_radix (char* s, int radix) {
       ans += ctoi(s[len]) * r;
       r = r * radix;
       len--;
-   }
+   }*/
 
    return ans;
 }

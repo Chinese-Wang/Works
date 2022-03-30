@@ -13,7 +13,7 @@ void printBits(Bits64 *bits)
 int main( ) {
     Bits64 x;
     x.inFloats[0] = 4.8;
-    x.inFloats[1] = 256.0;
+    x.inFloats[1] = 32.0;
 
     printf("byte: ");  //154       153     153     64      0       0       128     67
     for (int i = 0; i < nBytes; i++)
